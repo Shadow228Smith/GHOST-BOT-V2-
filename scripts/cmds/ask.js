@@ -18,7 +18,7 @@ async function getAIResponse(input, userId, messageID) {
  { url: 'https://ai-chat-gpt-4-lite.onrender.com/api/hercai', params: { question: input } }
  ];
 
- let response = "🧬『𝐒𝐇𝐈𝐒𝐔𝐈』🧬\n🇹🇬━°•✮•°𝐂♫𝐈♫𝐃°•✮•°━🇹🇬\n𝒋𝒆 𝒕'𝒆𝒄𝒐𝒖𝒕𝒆🥱 𝒃𝒂𝒍𝒂𝒏𝒄𝒆 𝒍𝒆 𝒕𝒓𝒖𝒄 😐𝒗𝒐𝒊𝒓👀...♻️⏳";
+ let response = "🧬『Ghost』🧬\n🇹🇬━°•✮•°sir°•✮•°━🇹🇬\n𝒋𝒆 𝒕'𝒆𝒄𝒐𝒖𝒕𝒆🥱 𝒃𝒂𝒍𝒂𝒏𝒄𝒆 𝒍𝒆 𝒕𝒓𝒖𝒄 😐𝒗𝒐𝒊𝒓👀...♻️⏳";
  let currentIndex = 0;
 
  for (let i = 0; i < services.length; i++) {
@@ -73,10 +73,10 @@ const fonts = {
  },
  onChat: async function ({ event, message }) {
  const messageContent = event.body.trim().toLowerCase();
- if (messageContent.startsWith("shadow")) {
- const input = messageContent.replace(/^shadow\*/, "").trim();
+ if (messageContent.startsWith("Ghost")) {
+ const input = messageContent.replace(/^Ghost\*/, "").trim();
  const { response, messageID } = await getAIResponse(input, event.senderID, message.messageID);
- message.reply(`🧬『𝐒𝐇𝐀𝐃𝐎𝐖』🧬\n🇹🇬━°•✮•°𝐂♫𝐈♫𝐃°•✮•°━🇹🇬\n🎯${response}🎯`, messageID);
+ message.reply(`🧬 Ghost』🧬\n🇹🇬━°•✮•°Sir°•✮•°━🇹🇬\n🎯${response}🎯`, messageID);
  }
  }
    }
