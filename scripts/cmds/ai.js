@@ -12,14 +12,14 @@ module.exports = {
     onStart: async function() {},
     onChat: async function({ event, message }) {
         const links = [
-            "https://i.ibb.co/PQQdjc8/image.jpg",
+            "https://i.ibb.co/VYSW0zs/image.jpg",
         ];
 
         let img = links[Math.floor(Math.random() * links.length)];
 
         if (event.body && event.body.toLowerCase() === "ai") {
             return message.send({
-                body: "🙆𝐚𝐛𝐫𝐮𝐭𝐢𝐬😑🚶 𝐨𝐧 𝐝𝐢𝐭 Shadow....𝐩𝐚𝐬 ai❌",
+                body: "🙆𝐚𝐛𝐫𝐮𝐭𝐢𝐬😑🚶 𝐨𝐧 𝐝𝐢𝐭 Ghost....𝐩𝐚𝐬 ai❌",
                 attachment: await global.utils.getStreamFromURL(img)
             });
         }
