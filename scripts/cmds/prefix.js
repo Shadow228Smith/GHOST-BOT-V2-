@@ -16,17 +16,17 @@ module.exports = {
     if (event.body && event.body.toLowerCase() === "prefix") {
       return message.reply({
         body: `╭━━━≪✠≫━━━╮
-🕊️ 𝑃𝑅𝐸𝐹𝐼𝑆 ✨ 𝑆𝐻𝐴𝐷𝐴𝑊 🕊️
-      ☛ 🎨¥🎨
+🕊️ 𝑃𝑅𝐸𝐹𝐼𝑆 ✨🕊️
+      ☛ 🎨$🎨
 ╰━━━≪✠≫━━━╯
 ═════•【🎖】•═════
 🌟✨ 𝒞𝑅𝐸𝐴𝒯𝑜𝑅 ✨🌟
 ═════•【🎖】•═════
 ╭━━━≪✠≫━━━╮
-🚀 𝐂𝐢𝐝 ✄ 𝐊𝐚𝐠𝐞𝐧𝐨 🚀
+☾ ♛𝐬𝐢𝐫 𝐫𝐮𝐟𝐢𝐧♛ ☽
 ╰━━━≪✠≫━━━╯
           ¥`,
-        attachment: await global.utils.getStreamFromURL("https://i.ibb.co/PQQdjc8/image.jpg")
+        attachment: await global.utils.getStreamFromURL("https://i.ibb.co/VYSW0zs/image.jpg")
       });
     }
   }
